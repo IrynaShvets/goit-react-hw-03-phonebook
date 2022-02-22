@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import ContactForm from '../ContactForm';
 import ContactList from '../ContactList';
 import Filter from '../Filter';
@@ -17,6 +19,26 @@ class App extends Component {
     filter: '',
   };
 
+  componentDidMount() {
+    const contacts = localStorage.getItem('contacts');
+    const parsedContacts = JSON.parse(contacts);
+
+    if (parsedContacts) {
+      this.setState({
+        contacts: parsedContacts,
+      });
+    }
+  }
+  componentDidUpdate(prevProps, prevState) {
+    const nextContacts = this.state.contacts;
+    const prevContacts = prevState.contacts;
+
+    if (nextContacts !== prevContacts) {
+      console.log('Оновилося поле contacts, записую contacts в сховище');
+      localStorage.setItem('contacts', JSON.stringify(nextContacts));
+    }
+  }
+
   // --- додаю контакти до списку ---
   addContact = (name, number) => {
     const contact = {
@@ -32,7 +54,7 @@ class App extends Component {
     );
 
     if (isNameInContacts) {
-      return alert(`${name} is already in contacts.`);
+      return toast(`${name} is already in contacts.`);
     }
 
     this.setState(({ contacts }) => ({
@@ -67,6 +89,7 @@ class App extends Component {
 
     return (
       <Container>
+        <ToastContainer />
         <TitleMain>Phonebook</TitleMain>
         <ContactForm onSubmit={this.addContact} />
         <Title>Contacts</Title>

@@ -11,11 +11,11 @@ export const Form = styled.form`
   border-radius: 7px;
   margin-bottom: 40px;
   padding: 20px;
-  box-shadow: 5px 6px 4px #57071e;
-  background-color: rgb(240, 214, 221);
+  box-shadow: 5px 6px 4px #4d0c0370;
+  background-color: #faddd9;
   &:hover {
-    box-shadow: 1px 2px 1px #b4526e, 3px 5px 4px #b63257, 5px 11px 8px #bb0b3d,
-      10px 20px 15px #57071e;
+    box-shadow: 1px 2px 1px #d6503e, 3px 5px 4px #f53c23, 5px 11px 8px #9c2818,
+      10px 20px 15px #4d0c03;
     transition: all 400ms cubic-bezier(0.4, 0, 0.3, 1);
   }
 `;
@@ -24,10 +24,10 @@ export const Label = styled.label`
   display: inline-flex;
   justify-content: flex-start;
   margin-bottom: 10px;
-  color: #57071e;
+  color: #4d0c03;
   font-size: 25px;
   font-weight: 500;
-  text-shadow: 1px 1px 2px #57071e;
+  text-shadow: 1px 1px 2px #4d0c03;
 `;
 
 export const Input = styled.input`
@@ -38,13 +38,13 @@ export const Input = styled.input`
   border: 0;
   border-radius: 4px;
   margin-bottom: 20px;
-  color: #57071e;
+  color: #4d0c03;
   font-size: 20px;
-  box-shadow: 5px 6px 4px #57071e;
+  box-shadow: 5px 6px 4px #4d0c0370;
 
   &:hover,
   &:focus {
-    outline: 1px solid #bb0b3d;
+    outline: 1px solid #d4240d;
     transition: outline 200ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;
@@ -64,16 +64,16 @@ export const Button = styled.button`
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #57071e;
+  color: #4d0c03;
   background-color: #fff;
-  box-shadow: 5px 6px 4px #57071e;
-  text-shadow: 2px 1px 2px #57071e;
+  box-shadow: 5px 6px 4px #4d0c0370;
+  text-shadow: 2px 1px 2px #4d0c03;
 
   &:hover {
     color: #fff;
-    background-color: #bb0b3d;
-    box-shadow: 1px 2px 1px #b4526e, 3px 5px 4px #b63257, 5px 11px 8px #bb0b3d,
-      10px 20px 15px #57071e;
+    background-color: #d4240d;
+    box-shadow: 1px 2px 1px #d6503e, 3px 5px 4px #f53c23, 5px 11px 8px #9c2818,
+      10px 20px 15px #4d0c03;
     transition: all 400ms cubic-bezier(0.4, 0, 0.3, 1);
   }
 `;

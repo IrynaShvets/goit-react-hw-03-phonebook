@@ -10,12 +10,12 @@ export const Wrapper = styled.div`
   margin-bottom: 20px;
   border: 0;
   border-radius: 7px;
-  background-color: rgb(240, 214, 221);
-  box-shadow: 5px 6px 4px #57071e;
+  background-color: #faddd9;
+  box-shadow: 5px 6px 4px #4d0c0370;
 
   &:hover {
-    box-shadow: 1px 2px 1px #b4526e, 3px 5px 4px #b63257, 5px 11px 8px #bb0b3d,
-      10px 20px 15px #57071e;
+    box-shadow: 1px 2px 1px #d6503e, 3px 5px 4px #f53c23, 5px 11px 8px #9c2818,
+      10px 20px 15px #4d0c03;
     transition: all 400ms cubic-bezier(0.4, 0, 0.3, 1);
   }
 `;
@@ -23,10 +23,10 @@ export const Wrapper = styled.div`
 export const Label = styled.label`
   display: flex;
   flex-direction: column;
-  color: #57071e;
+  color: #4d0c03;
   font-size: 30px;
   font-weight: 600;
-  text-shadow: 2px 1px 2px #57071e;
+  text-shadow: 2px 1px 2px #4d0c03;
 `;
 
 export const Input = styled.input`
@@ -37,13 +37,13 @@ export const Input = styled.input`
   border: 0;
   border-radius: 4px;
   margin-bottom: 20px;
-  color: #57071e;
+  color: #4d0c03;
   font-size: 20px;
-  box-shadow: 5px 6px 4px #57071e;
+  box-shadow: 5px 6px 4px #4d0c0370;
 
   &:hover,
   &:focus {
-    outline: 1px solid #bb0b3d;
+    outline: 1px solid #d4240d;
     transition: outline 200ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;

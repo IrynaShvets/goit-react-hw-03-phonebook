@@ -30,19 +30,19 @@ export const Button = styled.button`
   display: inline-block;
   cursor: pointer;
   background-color: #fff;
-  color: #57071e;
+  color: #4d0c03;
   text-transform: uppercase;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 1px 10px;
-  box-shadow: 5px 6px 4px #57071e;
-  text-shadow: 1px 1px 2px #57071e;
+  box-shadow: 5px 6px 4px #4d0c0370;
+  text-shadow: 1px 1px 2px #4d0c03;
 
   &:hover {
     color: #fff;
-    background-color: #bb0b3d;
-    box-shadow: 1px 2px 1px #b4526e, 3px 5px 4px #b63257, 5px 11px 8px #bb0b3d,
-      10px 20px 15px #57071e;
+    background-color: #d4240d;
+    box-shadow: 1px 2px 1px #d6503e, 3px 5px 4px #f53c23, 5px 11px 8px #9c2818,
+      10px 20px 15px #4d0c03;
     transition: all 400ms cubic-bezier(0.4, 0, 0.3, 1);
   }
 `;
